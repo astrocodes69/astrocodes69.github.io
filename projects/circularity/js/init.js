@@ -34,7 +34,7 @@ var circles = []
 
         // TODO 3 / 8 : Call the drawCircle() function 
 for (var looper = 0; looper <= 100; looper++ ){
-    drawCircle
+    drawCircle();
 }
 
         ////////////////////////////////////////////////////////////
@@ -48,14 +48,19 @@ for (var looper = 0; looper <= 100; looper++ ){
         */
         function update() {
             // TODO 4 : Update the circle's position //
-            // dont need these since we have a loop
+           
+            // dont need these since we have a loop //
+           
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
-        // dont need these since we have a loop
+            
+            // dont need these since we have a loop //
+            
             // TODO 9 : Iterate over the array
          for (var i1 = 0; i1 <= 100; i1++){
-            physikz.updatePosition(eachCircle)
-            game.checkCirclePosition(eachCircle)
+            physikz.updatePosition(circles[i1])
+            game.checkCirclePosition(circles[i1])
          }
+        }
         /* 
         This Function should check the position of a circle that is passed to the 
         Function. If that circle drifts off the screen, this Function should move
